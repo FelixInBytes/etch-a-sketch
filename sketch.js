@@ -2,13 +2,18 @@
 
 // function that builds a grid in the "container"
 function createGrid(x) {
-    for (var rows = 0; rows < x; rows++) {
-        for (var columns = 0; columns < x; columns++) {
-            $("#container").append("<div class='grid'></div>");
+    if ( x <= 100) {
+        for (var rows = 0; rows < x; rows++) {
+            for (var columns = 0; columns < x; columns++) {
+                $("#container").append("<div class='grid'></div>");
+            };
         };
-    };
-    $(".grid").width(960/x);
-    $(".grid").height(960/x);
+        $(".grid").width("1%");
+        $(".grid").height("1%");
+    }else{
+        createGrid(prompt("please pick a number under between 1 - 100!"));
+    }
+    
 };
 
 // function that clears the grid

@@ -1,13 +1,42 @@
-#container {
+
+#sketch-wrapper {
 	position: relative;
 	top: 30px;
 	outline:2px solid #000;
 	font-size: 0;
 	margin:auto;
-	height:960px;
-	width:960px;
+	height: 1200px;
+	width: 1200px;
+	padding: 50px;
+	border: none;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	background-color: red;
+	flex-direction: column;
+	border-radius: 10px;
+}
+
+#container {
+	background-color: white;
+	position: relative;
+	top: 30px;
+	outline:2px solid #000;
+	font-size: 0;
+	height:800px;
+	width: 600px;
 	padding: 0;
 	border: none;
+	display: flex;
+	align-content: flex-start;
+	flex-wrap: wrap;
+
+}
+
+.newGrid{
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .grid {
@@ -15,5 +44,27 @@
 	padding:0;
 	border:none;
 	outline:1px solid #000;
-	display:inline-block;
+	display:flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	gap: 0;
+}
+
+#btns{
+	display: flex;
+	flex-direction: row;
+	padding-top: 100px;
+	width: 1000px;
+	gap: 300px;
+	align-items: center;
+	justify-content: center;
+}
+
+#white-btn{
+	display: flex;
+	height: 100px;
+	width: 100px;
+	background-color: white;
+	border: 2px solid white;
+	border-radius: 100px;
 }
