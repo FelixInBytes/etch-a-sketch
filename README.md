@@ -5,7 +5,7 @@ etch-a-sketch project
 ## description
 
 - using javascript, html and css to recreate a etch-a-sketch in your browser
-- this project is part of the [The Odin Project](www.theodinproject.com) Foundations Course
+- this project is part of the [The Odin Project](https://www.theodinproject.com) Foundations Course
 
 ## Tec used
 
